@@ -35,6 +35,14 @@ h1,h2,h3{
 
 /* navbar */
 /* ----------------------------------------------------------------------------------------------------------------------------- */
+nav {
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+.change-bg {
+    background: black;
+}
 .logo { font-size: 30px;}
 
 .navbar-brand
