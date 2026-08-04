@@ -1,0 +1,76 @@
+:root
+    {
+        --ink:#12182b;
+        --char:#0a0d18;
+        --slate:#26334d;
+        --slate-soft:#33425f;
+        --amber:#eb9a4c;
+        --amber-soft:#f4b877;
+        --copper:#b5651d;
+        --herb:#84a862;
+        --parchment:#f3ead2;
+        --parchment-dim:#e2d6b3;
+
+        --font-display:'Pixelify Sans', system-ui, sans-serif;
+        --font-body:'Karla', system-ui, sans-serif;
+        --font-mono:'Space Mono', monospace;
+    }
+
+*{box-sizing:border-box;}
+
+html{scroll-behavior:smooth;}
+
+body{
+    background:var(--ink);
+    color:var(--parchment);
+    font-family:var(--font-body);
+    overflow-x:hidden;
+}
+
+h1,h2,h3{
+    font-family:var(--font-display);
+    letter-spacing:0.5px;
+}
+
+
+/* navbar */
+/* ----------------------------------------------------------------------------------------------------------------------------- */
+.logo { font-size: 30px;}
+
+.navbar-brand
+{
+    font-family: var(--font-display);
+    color: var(--parchment);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.navbar-brand:hover { color: var(--amber-soft);}
+
+/* navlinks */
+.nav-link
+{
+    color: var(--parchment-dim);
+    font-family: var(--font-mono);
+    border-bottom: 3px solid;
+    border-color: transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover
+{
+    color: var(--amber-soft);
+    border-color: var(--amber-soft);
+}
+
+/* nav start cokking button */
+.nav-btn
+{
+    background: linear-gradient(180deg, var(--amber-soft), var(--amber));
+    color: var(--char);
+}
+
+/* mobile hunbergur butn */
+.navbar-toggler {background-color: var(--amber-soft);}
+
+/* ------------------------------------------------------------------------------------------------------------------------------- */
