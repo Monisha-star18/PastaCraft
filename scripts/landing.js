@@ -16,7 +16,7 @@ $(window).on("scroll",function ()
 //book flip
 
 const pageFlip = new St.PageFlip(document.getElementById('book') , {
-    width :350 , height:450,
+    width :450 , height:550,
     size : "fixed" , 
     showCover :true,
     useProtrait : false,

@@ -21,7 +21,7 @@
 html{scroll-behavior:smooth;}
 
 body{
-    background:var(--ink);
+    background:var(--char);
     color:var(--parchment);
     font-family:var(--font-body);
     overflow-x:hidden;
@@ -125,12 +125,20 @@ nav {
 #aboutPasta
 {
     margin-top: 200px;
+    padding-top: 90px;
+    background-color: var(--ink);
 }
 
 #aboutSection-heading
 {
     border-bottom: 3px dashed;
     border-color: var(--amber);
+}
+
+#aboutSection-subtitle
+{
+    margin-top: 100px !important;
+    padding: 10px;
 }
 
 /* book */
