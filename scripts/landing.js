@@ -14,15 +14,25 @@ $(window).on("scroll",function ()
     })
 
 //book flip
+let bookWidth = 450;
+let bookHeight = 450;
+// Mobile
+if (window.innerWidth <= 576) {
+    
+    bookWidth = 350;
+    bookHeight = 350;
 
-const pageFlip = new St.PageFlip(document.getElementById('book') , {
-    width :450 , height:550,
-    size : "stretch" , 
-    showCover :true,
-    useProtrait : false,
-    useMouseEvents : true,
-    drawShadow :true,
-})
+} 
+
+const pageFlip = new St.PageFlip(document.getElementById("book"), {
+    width: bookWidth,
+    height: bookHeight,
+    size: "fixed",
+    showCover: true,
+    usePortrait: true,
+    useMouseEvents: true,
+    drawShadow: true
+});
 
 pageFlip.loadFromHTML(document.querySelectorAll('#book .page'))
 

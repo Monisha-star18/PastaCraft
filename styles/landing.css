@@ -151,7 +151,11 @@ nav {
 }
 
 /* book */
- 
+#book
+{
+    width: 450px;
+    height: 500px;
+}
 .page
 {
     background-color: var(--amber);
