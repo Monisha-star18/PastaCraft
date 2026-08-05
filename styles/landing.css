@@ -216,17 +216,42 @@ nav {
     padding-bottom: 150px;
  }
 
- video
+ .experience-letter-container
  {
-    width : 600px;
+    padding: 10px;
  }
 
- 
+ .experience-letter
+ {
+    border: 2px dashed var(--amber);
+    border-radius: 12px;
+    padding: 35px 30px;
+    color: var(--parchment);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4), inset 0 0 15px rgba(235, 154, 76, 0.05);
+    transition: all 0.3s ease;
+ }
+
+ .experience-letter:hover
+ {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(235, 154, 76, 0.25);
+ }
+
+ .letter-subheading
+ {
+    font-family: var(--font-mono);
+    font-size: 13px;
+ }
+
+
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 
 /* footer */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
-
+/* footer
+{
+    
+} */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 
 
@@ -244,6 +269,12 @@ nav {
 @media (max-width: 576px) 
 {
     /* about section */
+    #book
+    {
+        width: 300px;
+        height: 500px;
+    }
+
     /* experience  section */
     video {width : 350px;}
 
