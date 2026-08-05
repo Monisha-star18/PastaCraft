@@ -20,7 +20,7 @@ const pageFlip = new St.PageFlip(document.getElementById('book') , {
     size : "fixed" , 
     showCover :true,
     useProtrait : false,
-    useMouseEvents : false,
+    useMouseEvents : true,
     drawShadow :true,
 })
 
