@@ -41,7 +41,9 @@ nav {
 }
 
 .change-bg {
-    background: black;
+    background:var(--char);
+    border-bottom: 0.3px solid;
+    border-color: var(--amber);
 }
 .logo { font-size: 30px;}
 
@@ -72,10 +74,12 @@ nav {
 }
 
 /* nav start cokking button */
-.nav-btn
+/* landing btn */
+.nav-btn ,.landing-btn
 {
     background: linear-gradient(180deg, var(--amber-soft), var(--amber));
     color: var(--char);
+    font-family: var(--font-mono);
 }
 
 /* mobile hunbergur butn */
@@ -86,10 +90,6 @@ nav {
 
 /* section common element */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
-section
-{
-    margin-top: 100px;
-}
 .section-small-heading 
 {
     font-family: var(--font-mono);
@@ -102,8 +102,14 @@ section
 }
 /* ------------------------------------------------------------------------------------------------------------------------------- */
 
+
 /* landing section */
 /* ------------------------------------------------------------------------------------------------------------------------------- */
+#landing
+{
+    margin-top: 110px;
+    
+}
 
 .landing-para
 {
@@ -111,4 +117,28 @@ section
     letter-spacing: 2px;
     font-size: 15px;
 }
+
 /* ------------------------------------------------------------------------------------------------------------------------------- */
+
+/* about  section */
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+#aboutPasta
+{
+    margin-top: 200px;
+}
+
+#aboutSection-heading
+{
+    border-bottom: 3px dashed;
+    border-color: var(--amber);
+}
+
+/* book */
+ 
+.page
+{
+    background-color: var(--amber);
+}
+/* ------------------------------------------------------------------------------------------------------------------------------- */
+
+ 

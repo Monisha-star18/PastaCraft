@@ -14,7 +14,8 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@500;700&family=Karla:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/page-flip/dist/css/page-flip.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js"></script>
     <!-- custom css -->
     <link rel="stylesheet" href="./styles/landing.css">
 </head>
@@ -51,14 +52,15 @@
 
             <!--landing-left container-->
             <div class="col-12 col-lg-6 landing-left-container">
-                <p class="section-small-heading">A kitchen that teaches</p>
+                <small class="section-small-heading">A kitchen that teaches</small>
                 <h1 class="section-heading">Craft real pasta and learn </h1>
-                <p class="mt-4 landing-para">
+                <p class="mt-4 mb-5 landing-para">
                     No stove required to start. <br>
                     Choose your ingredients, mix, knead and shape your way <br>
                     through hands-on levels built for total beginners — then <br>
                     take what you've learned into your own kitchen.<br>
                 </p>
+                <a href="" class="text-decoration-none p-2  rounded landing-btn">Get started</a>
             </div>
 
             <!--landing-right container  -->
@@ -66,6 +68,46 @@
                 <img src="./asserts/imgaes/landing_section/landing-img.png" alt="spaghetti-img">
             </div>
         </div>
+    </section>
+
+    <!-- about pasta section -->
+    <section class="container" id="aboutPasta">
+        <small class="section-small-heading">Lets learn more about pasta</small>
+        <h1><span class="section-heading" id="aboutSection-heading">ABOUT PASTA</span></h1>
+
+        <div id="book">
+            <!-- Cover Page -->
+            <div class="page">
+                <h1>ABOUT PASTA</h1>
+                <hr>
+                <p class="subtitle">A book that embraces your love for  pasta</p>
+            </div>
+
+            <!-- page 1  -->
+            <div class="page">
+                <h1>History of pasta</h1>
+            </div>
+
+            <!-- page 2  -->
+            <div class="page">
+                <h1>How pasta was invented</h1>
+            </div>
+
+            <!-- page 3  -->
+            <div class="page">
+                <h1>Evolution of pasta</h1>
+            </div>
+
+            <!-- page 3  -->
+            <div class="page">
+                <h1>World tour of pasta</h1>
+            </div>
+
+        </div>
+
+        <button class="btn btn-light" id="preBtn">&lt;</button>
+        <button class="btn btn-light" id="nextBtn">&gt;</button>
+       
     </section>
    
 
@@ -75,6 +117,9 @@
 
     <!-- Bootstrap Bundle JS (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- filp cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.js"></script>
 
     <!-- custom js -->
     <script src="./scripts/landing.js"></script>
