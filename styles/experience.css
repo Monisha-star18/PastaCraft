@@ -38,6 +38,7 @@
 .title
 {
     font-family: var(--font-display);
+    
     color: var(--ink);
     -webkit-text-stroke: 4px white;
     paint-order: stroke fill;
@@ -56,6 +57,12 @@
     bottom: 10%;
     left: 1%;
     transition: all 0.3s ease;
+    animation: float 3s ease infinite;
+}
+
+@keyframes float {
+    0%,100% { transform: translatey(0); }
+    50% {transform: translateY(-30px);}
 }
 
 .levelBanner:hover , .title-bg:hover
@@ -66,7 +73,7 @@
 .levels-container
 {
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 22%;
     justify-content: center ;
     align-items: center;
@@ -78,4 +85,29 @@
     width: 20%;
     height: 20%;
     margin-right: 50px;
+}
+
+.level-cover
+{
+    border: #0a0d18 1px solid;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+}
+#level-cover-2 { bottom: 27%;left: 45%;}
+
+#level-cover-3{bottom: 27%;left: 63%;}
+
+#level-cover-4{bottom: 27%;left: 81%;}
+
+.level-lock
+{
+    /* width: 150%;
+    height: 150%; */
+     width: 100%;
+    height: 100%;
 }
