@@ -27,27 +27,14 @@
 .title-bg
 {
     position: absolute;
-    width: 28%;
-    height: 30%;
-    top: 0;
+    width: 20%;
+    height: 20%;
+    top: 10%;
     left: 45%;
     transition: all 0.3s ease;
     
 }
 
-.title
-{
-    font-family: var(--font-display);
-    
-    color: var(--ink);
-    -webkit-text-stroke: 4px white;
-    paint-order: stroke fill;
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transition: all 0.3s ease;
-
-}
 
 .levelBanner
 {
@@ -144,4 +131,22 @@
 {
     box-shadow: 10px 10px 10px 10px rgba(251, 223, 42, 0.5);
     transform: scale(1.05);
+}
+
+.exit
+{
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 10%;
+    right: 0;
+    cursor: pointer;
+}
+
+.exit-img
+{
+    width: 20%;
+    height: 20%;
 }

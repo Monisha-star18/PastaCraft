@@ -11,3 +11,7 @@ $(".music-img").click(function() {
 $("#level1-frame").click(function(){
     window.location.href = "../pages/gamePage-Level1.html"
 })
+
+$(".exit").click(function(){
+    window.location.href = "../index.html"
+})
