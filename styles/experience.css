@@ -1,7 +1,81 @@
+:root
+    {
+        --ink:#12182b;
+        --char:#0a0d18;
+        --slate:#26334d;
+        --slate-soft:#33425f;
+        --amber:#eb9a4c;
+        --amber-soft:#f4b877;
+        --copper:#b5651d;
+        --herb:#84a862;
+        --parchment:#f3ead2;
+        --parchment-dim:#e2d6b3;
+
+        --font-display:'Pixelify Sans', system-ui, sans-serif;
+        --font-body:'Karla', system-ui, sans-serif;
+        --font-mono:'Space Mono', monospace;
+    }
 
 /* background */
 .experience-bg
 {
     width: 100%;
     height: 695px;
+    position: relative;
+}
+
+.title-bg
+{
+    position: absolute;
+    width: 28%;
+    height: 30%;
+    top: 0;
+    left: 32%;
+    transition: all 0.3s ease;
+    
+}
+
+.title
+{
+    font-family: var(--font-display);
+    color: var(--ink);
+    -webkit-text-stroke: 4px white;
+    paint-order: stroke fill;
+    position: absolute;
+    top: 8%;
+    left: 37%;
+    transition: all 0.3s ease;
+
+}
+
+.levelBanner
+{
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    bottom: 10%;
+    left: 1%;
+    transition: all 0.3s ease;
+}
+
+.levelBanner:hover , .title-bg:hover
+{
+    transform: translateY(-5px);
+}
+
+.levels-container
+{
+    position: absolute;
+    bottom: 10%;
+    left: 22%;
+    justify-content: center ;
+    align-items: center;
+    gap: 10px;
+}
+
+.level-img
+{
+    width: 20%;
+    height: 20%;
+    margin-right: 50px;
 }
