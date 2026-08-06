@@ -75,7 +75,7 @@ nav {
 
 /* nav start cokking button */
 /* landing btn */
-.nav-btn ,.landing-btn
+.nav-btn ,.landing-btn , .exp-btn
 {
     background: linear-gradient(180deg, var(--amber-soft), var(--amber));
     color: var(--char);
