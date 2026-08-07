@@ -69,7 +69,7 @@
     position: absolute;
     cursor: pointer;
 }
-#whiteFlour
+#whiteFlour , #btn-whiteFlour
 {
     width: 7%;
     height: 10%;
@@ -126,12 +126,7 @@
     height: 15%;
 }
 
-#step1-div {  display: none;}
-#step2-div { display : none; }
-#step3-div {display : none;}
-
-.show
-{
-    display: flex;
-}
+#step1-div { display: none; }
+#step2-div { display: none; }
+#step3-div { display: none; }
 
