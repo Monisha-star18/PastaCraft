@@ -48,19 +48,59 @@ $(document).ready(function () {
     })
 
     $("#spoon").click(function(){
-        console.log("click")
-        console.log(stepCount)
         if(stepCount ==  4)
         {
             $("#step3-div").css("display", "none");
             $("#step4-div").css("display", "block");
-            setTimeout(function(){ $("#arrow").css("display", "block"); },300)
+            setTimeout(function(){ $("#arrow").css("display", "block"); },400)
             stepCount ++ ;
         }
         
     })
 
-    $("#")
+    $("#arrow").click(function(){
+        if(stepCount ==  5)
+        {
+            $("#step5-div").css("display", "block");
+            $("#step4-div").css("display", "none");
+            $("#arrow").css("display", "none");
+            stepCount ++ ;
+        }
+    })
+
+    $("#arrow").click(function(){
+        if(stepCount ==  6)
+        {
+            $("#step5-div").css("display", "block");
+            setTimeout(function(){ $("#arrow-2").css("display", "block"); },400)
+            $("#step4-div").css("display", "none");
+            $("#arrow").css("display", "none");
+            
+            stepCount ++ ;
+        }
+    })
+
+    $("#arrow-2").click(function(){
+        if(stepCount ==  7)
+        {
+            $("#step5-div").css("display", "none");
+            $("#arrow-2").css("display", "none");
+            $("#step6-div").css("display", "block");     
+            
+            $("#step6-div").fadeOut(200,function()
+            {
+                $("#step7-div").fadeIn(500).delay(500).fadeOut(500 , function()
+                    {
+                        $("#step8-div").fadeIn(500).delay(500).fadeOut(500 ,function()
+                        {
+                            $("#step9-div").fadeIn(500)
+                        })
+                    })
+            })
+
+            stepCount ++ ;
+        }
+    })
 
 
 
