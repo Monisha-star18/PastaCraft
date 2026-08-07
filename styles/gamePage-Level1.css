@@ -115,5 +115,23 @@
 
 .flourWell
 {
-    
+   position: absolute;
+   left: 49%;
+   top: 69%; 
 }
+
+.steps
+{
+    width: 30%;
+    height: 15%;
+}
+
+#step1-div {  display: none;}
+#step2-div { display : none; }
+#step3-div {display : none;}
+
+.show
+{
+    display: flex;
+}
+
