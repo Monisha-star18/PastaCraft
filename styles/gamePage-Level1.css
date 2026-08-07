@@ -8,7 +8,10 @@
 {
     position: relative;
 }
-
+.rod-elements
+{
+ cursor: pointer;
+}
 .steel-rod-wisker
 {
     position: absolute;
@@ -51,7 +54,7 @@
 .steel-rod-rollingPin
 {
     position: absolute;
-    top: 32%;
+    top: 31%;
     left: 32%;
 }
 
@@ -59,4 +62,58 @@
 {
     width: 35%;
     height: 35%;
+}
+
+.Ingredients 
+{
+    position: absolute;
+    cursor: pointer;
+}
+#whiteFlour
+{
+    width: 7%;
+    height: 10%;
+    top: 52%;
+    left: 27%;
+}
+
+#waterJug
+{
+    width: 8%;
+    height: 20%;
+    top: 52%;
+    left: 8%;
+}
+
+#salt
+{
+    width: 3%;
+    height: 10%;
+    top: 31%;
+    right: 37%;
+}
+
+#oliveOil
+{
+    width: 5%;
+    height: 20%;
+    top: 19%;
+    right: 40%;
+    
+}
+
+
+#eggs
+{
+    width: 9%;
+    height: 15%;
+    top: 71%;
+    left: 0%;
+    
+}
+
+
+.flourWell
+{
+    
 }
