@@ -130,3 +130,23 @@
 #step2-div { display: none; }
 #step3-div { display: none; }
 
+#step4-div {
+    left: 48%;
+   top: 64%; 
+   display: none;
+}
+
+.show
+{
+    display: block;
+}
+
+#arrow
+{
+    width: 15%;
+    height: 15%;
+    position: absolute;
+    left: 50%;
+    top: 69%; 
+    display: none;
+}
