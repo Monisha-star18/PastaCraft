@@ -89,13 +89,9 @@ $(document).ready(function () {
             
             $("#step6-div").fadeOut(200,function()
             {
-                $("#step7-div").fadeIn(500).delay(500).fadeOut(500 , function()
-                    {
-                        $("#step8-div").fadeIn(500).delay(500).fadeOut(500 ,function()
-                        {
-                            $("#step9-div").fadeIn(500)
-                        })
-                    })
+                
+                $("#step7-div").fadeIn(1000)
+
             })
 
             stepCount ++ ;
