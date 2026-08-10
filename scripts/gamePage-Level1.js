@@ -172,5 +172,12 @@ $(document).ready(function () {
     })
 
 
+    $("#kinfe").click(function(){
+        $(".steel-rod-kinfe").css("left","51%")
+        $(".steel-rod-kinfe").css("top","49%")
+    })
+
+
+
 
 })
