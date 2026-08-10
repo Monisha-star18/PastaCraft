@@ -272,11 +272,11 @@ left: 7%;
     display: block;
 }
 
-.completedBorad
-{
-    height: 30%;
-    width: 30%;
-}
-
 .completedSign
-{}
+{
+    position: absolute;
+    top: 10%;
+    left: 35%;
+    z-index: 1000;
+    display: none;
+}

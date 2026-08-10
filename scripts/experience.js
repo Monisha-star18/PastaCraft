@@ -1,4 +1,7 @@
 
+
+
+
 $(".music-img").click(function() {
     
     // 1. Remove the glow 
@@ -14,8 +17,15 @@ $("#level1-frame").click(function(){
 
 $(".exit").click(function(){
     window.location.href = "../index.html"
+    localStorage.removeItem("level");
 })
 
+let level = localStorage.getItem("level")
+
+if (level == 2)
+{
+    $("#level-cover-2").css("display","none")
+}
 
 // const query = "Ratatouille Pasta"
 // async function testAPIKey() {

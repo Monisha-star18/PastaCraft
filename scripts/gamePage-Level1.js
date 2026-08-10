@@ -1,6 +1,7 @@
 
 $(document).ready(function () {
 
+     let level = 1;
     // to have the flow of game we use the step count so the next step cant be done before completing the previous step
     let stepCount = 1;
     updateShadow();
@@ -236,6 +237,7 @@ $(document).ready(function () {
             setTimeout (function(){$("#step-7-completed").addClass("showcompleted");},8200)
             stepCount ++ ;
             updateShadow();
+            showCompleted();
         }
     });
 
@@ -298,20 +300,35 @@ $(document).ready(function () {
     }
 
 
-    if(stepCount == 13)
+    function showCompleted()
     {
-        
-        
-        
-        setTimeout(function(){
-            confetti({
-                particleCount: 500,   // number of pieces
-                spread: 90,           // how wide it fans out
-                origin: { y: 0.6 },  // where it fires from (0=top, 1=bottom)
-                colors: ["#360ae8", "#c70874", "#ffffff"] // your brand colors
-            });
-        },1000)
+        if(stepCount == 13)
+            {
+                setTimeout(function(){
+                    $(".completedSign").css("display","block")
+                    confetti({
+                        particleCount: 500,   // number of pieces
+                        spread: 90,           // how wide it fans out
+                        origin: { y: 0.6 },  // where it fires from (0=top, 1=bottom)
+                        colors: ["#360ae8", "#c70874", "#ffffff"] // your brand colors
+                    });
+                },10000)
+                
+                
+                level ++;
+                localStorage.setItem("level", level);
+
+
+               setTimeout(function(){
+                window.location.href = "../pages/experience.html"
+               },13000)
+
+
+               
+            }
     }
+
+    
 
 
 
