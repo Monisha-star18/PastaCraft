@@ -75,6 +75,7 @@
     height: 10%;
     top: 52%;
     left: 27%;
+    
 }
 
 #waterJug
@@ -103,15 +104,28 @@
 }
 
 
-#eggs
+#eggs ,#eggs-2,#eggs-1
 {
-    width: 9%;
-    height: 15%;
-    top: 71%;
+    width: 20%;
+    height: 20%;
+}
+.eggs-div
+{
+    top: 74%;
     left: 0%;
+}
+
+#eggs2-div
+{
+    display: none;
     
 }
 
+#eggs1-div
+{
+    display: none;
+    
+}
 
 .flourWell
 {
@@ -150,7 +164,8 @@
 #step13-cut1-div,
 #step13-cut2-div,
 #step13-cut3-div,
-#step13-cut4-div
+#step13-cut4-div,
+#step14-div
 
 { display: none; }
  
@@ -187,4 +202,23 @@
 {
     left: 52%;
    top: 63%; 
+}
+
+.shadowClass {
+    filter: drop-shadow(0 0 6px #FFD700)
+            drop-shadow(0 0 14px rgba(255, 193, 7, 0.8));
+}
+
+
+.step
+{
+    position: absolute;
+    right: -7%;
+    top:3%;
+}
+
+.step-board
+{
+    height: 75%;
+    width: 75%;
 }
