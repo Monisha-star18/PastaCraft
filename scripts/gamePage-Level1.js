@@ -172,10 +172,24 @@ $(document).ready(function () {
     })
 
 
-    $("#kinfe").click(function(){
-        $(".steel-rod-kinfe").css("left","51%")
-        $(".steel-rod-kinfe").css("top","49%")
-    })
+    $("#kinfe").click(function () {
+        if (stepCount == 12) {
+            $("#step12-roll7-div").css("display","none")
+            $("#step13-cut1-div").fadeOut(1000,function()
+            {
+                $("#step13-cut2-div").fadeOut(1000,function()
+                {
+                    $("#step13-cut3-div").fadeOut(1000,function()
+                    {
+                        $("#step13-cut4-div").fadeOut(1000,function()
+                        {
+                            $("#step14-div").fadeIn(1000)
+                        })
+                    })
+                })
+            })
+        }
+    });
 
 
 
