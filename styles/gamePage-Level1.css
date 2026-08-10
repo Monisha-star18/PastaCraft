@@ -213,12 +213,61 @@
 .step
 {
     position: absolute;
-    right: -7%;
+    right: 0%;
     top:3%;
 }
 
 .step-board
 {
     height: 75%;
-    width: 75%;
+    width: 80%;
+}
+
+.completed
+{
+height: 7%;
+width: 7%;
+left: 7%;
+ position: absolute;
+ display: none;
+}
+
+#step-1-completed
+{
+    top:17%;
+}
+
+#step-2-completed
+{
+    top:27%;
+}
+
+#step-3-completed
+{
+    top:35%;
+}
+
+#step-4-completed
+{
+    top:42%;
+}
+
+#step-5-completed
+{
+    top:54%;
+}
+
+#step-6-completed
+{
+    top:65%;
+}
+
+#step-7-completed
+{
+    top:75%;
+}
+
+.showcompleted
+{
+    display: block;
 }

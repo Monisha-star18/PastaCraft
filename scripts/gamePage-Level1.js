@@ -13,6 +13,8 @@ $(document).ready(function () {
         if(stepCount ==  1)
         {
             $("#step1-div").css("display", "block");
+
+            $("#step-1-completed").addClass("showcompleted");
             // step count increase 
             stepCount ++ ;
 
@@ -50,6 +52,9 @@ $(document).ready(function () {
             $("#step3-div").css("display", "block");
             $("#eggs2-div").css("display","none")
             $("#eggs1-div").css("display","block")
+
+            $("#step-2-completed").addClass("showcompleted");
+
             stepCount ++ ;
             updateShadow();
         }
@@ -106,7 +111,10 @@ $(document).ready(function () {
 
             })
 
+            $("#step-3-completed").addClass("showcompleted");
+            
             stepCount ++ ;
+
             updateShadow();
         }
     })
@@ -129,9 +137,10 @@ $(document).ready(function () {
             setTimeout(function(){ $("#arrow-2").css("display", "block"); },400)
             $("#step8-div").css("display", "none");
             $("#arrow").css("display", "none");
-            
+
             stepCount ++ ;
             updateShadow();
+            
         }
     })
 
@@ -150,9 +159,13 @@ $(document).ready(function () {
 
             })
 
-            stepCount ++ ;
+             $("#step-4-completed").addClass("showcompleted");
+
+            setTimeout(function(){
+                stepCount ++ ;
             updateShadow();
             rollCilckCount =0;
+            },2100)
         }
     })
 
@@ -186,11 +199,14 @@ $(document).ready(function () {
                 
             })
             
+            
+
             setTimeout(function(){
+                $("#step-5-completed").addClass("showcompleted");
                 stepCount ++ ;
                 updateShadow();
 
-            },12500)
+            },13000)
 
         }
         
@@ -214,6 +230,10 @@ $(document).ready(function () {
                     })
                 })
             })
+
+            $("#step-6-completed").addClass("showcompleted");
+
+            setTimeout (function(){$("#step-7-completed").addClass("showcompleted");},8200)
             stepCount ++ ;
             updateShadow();
         }
@@ -234,6 +254,7 @@ $(document).ready(function () {
 
             case 1:
                 $("#whiteFlour").addClass("shadowClass");
+                
                 break;
 
             case 2:
@@ -259,6 +280,20 @@ $(document).ready(function () {
             case 12:
                 $("#kinfe").addClass("shadowClass");
                 break;
+
+            case 13:
+                $("#kinfe").removeClass("shadowClass");
+                break;
+
+            default:
+                $("#whiteFlour").removeClass("shadowClass");
+                $("#eggs").removeClass("shadowClass");
+                $("#spoon").removeClass("shadowClass");
+                $("#wisker").removeClass("shadowClass");
+                $("#rollingPin").removeClass("shadowClass");
+                $("#kinfe").removeClass("shadowClass");
+                break;
+
         }
     }
 
