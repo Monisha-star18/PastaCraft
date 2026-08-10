@@ -1,0 +1,127 @@
+.level-bg
+{
+    width: 100%;
+}
+
+.background
+{
+    position: relative;
+}
+.rod-elements
+{
+ cursor: pointer;
+}
+.steel-rod-wisker
+{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+}
+
+#wisker 
+{
+    width: 40%;
+    height: 40%;
+}
+
+.steel-rod-kinfe
+{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+#kinfe
+{
+    width: 20%;
+    height: 20%;
+}
+
+.steel-rod-spoon
+{
+    position: absolute;
+    top: 33%;
+    left: 27%;
+}
+
+#spoon
+{
+    width: 17%;
+    height: 17%;
+}
+
+.steel-rod-rollingPin
+{
+    position: absolute;
+    top: 31%;
+    left: 32%;
+}
+
+#rollingPin
+{
+    width: 35%;
+    height: 35%;
+}
+
+.Ingredients 
+{
+    position: absolute;
+    cursor: pointer;
+}
+#whiteFlour , #btn-whiteFlour
+{
+    width: 7%;
+    height: 10%;
+    top: 52%;
+    left: 27%;
+    
+}
+
+#waterJug
+{
+    width: 8%;
+    height: 20%;
+    top: 52%;
+    left: 8%;
+}
+
+#salt
+{
+    width: 3%;
+    height: 10%;
+    top: 31%;
+    right: 37%;
+}
+
+#oliveOil
+{
+    width: 5%;
+    height: 20%;
+    top: 19%;
+    right: 40%;
+    
+}
+
+
+#eggs ,#eggs-2,#eggs-1
+{
+    width: 20%;
+    height: 20%;
+}
+.eggs-div
+{
+    top: 74%;
+    left: 0%;
+}
+
+#eggs2-div
+{
+    display: none;
+    
+}
+
+#eggs1-div
+{
+    display: none;
+    
+}
