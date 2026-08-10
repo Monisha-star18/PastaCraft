@@ -298,6 +298,22 @@ $(document).ready(function () {
     }
 
 
+    if(stepCount == 13)
+    {
+        
+        
+        
+        setTimeout(function(){
+            confetti({
+                particleCount: 500,   // number of pieces
+                spread: 90,           // how wide it fans out
+                origin: { y: 0.6 },  // where it fires from (0=top, 1=bottom)
+                colors: ["#360ae8", "#c70874", "#ffffff"] // your brand colors
+            });
+        },1000)
+    }
+
+
 
 
 })
