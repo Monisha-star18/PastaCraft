@@ -98,6 +98,79 @@ $(document).ready(function () {
         }
     })
 
+    $("#wisker").click(function(){
+        if(stepCount ==  8)
+        {
+            $("#step7-div").css("display", "none");
+            $("#step8-div").css("display", "block");     
+            setTimeout(function(){ $("#arrow").css("display", "block"); },400)
+            stepCount ++ ;
+        }
+    })
+
+    $("#arrow").click(function(){
+        if(stepCount ==  9)
+        {
+            $("#step9-div").css("display", "block");
+            setTimeout(function(){ $("#arrow-2").css("display", "block"); },400)
+            $("#step8-div").css("display", "none");
+            $("#arrow").css("display", "none");
+            
+            stepCount ++ ;
+        }
+    })
+
+    $("#arrow-2").click(function(){
+        if(stepCount ==  10)
+        {
+            $("#step9-div").css("display", "none");
+            $("#arrow-2").css("display", "none");
+            $("#step10-div").css("display", "block");     
+            
+            $("#step10-div").fadeOut(1000,function()
+            {
+                
+                $("#step11-div").fadeIn(1000)
+
+            })
+
+            stepCount ++ ;
+        }
+    })
+
+    $("#rollingPin").click(function()
+    {
+        if (stepCount == 11)
+        {
+            $("#step11-div").css("display", "none");
+            $("#step12-roll1-div").css("display","block");
+
+            $("#step12-roll1-div").fadeOut(1000,function()
+            {
+                $("#step12-roll2-div").fadeIn(1000).fadeOut(1000,function()
+                {
+                    $("#step12-roll3-div").fadeIn(1000).fadeOut(1000,function()
+                    {
+                        $("#step12-roll4-div").fadeIn(1000).fadeOut(1000,function()
+                        {
+                            $("#step12-roll5-div").fadeIn(1000).fadeOut(1000,function()
+                            {
+                                $("#step12-roll6-div").fadeIn(1000).fadeOut(1000,function()
+                                {
+                                     $("#step12-roll7-div").fadeIn(1000)
+                                 })
+                            })
+                        })
+                    })
+                })
+                
+            })
+            stepCount ++ ;
+
+        }
+        
+    })
+
 
 
 })

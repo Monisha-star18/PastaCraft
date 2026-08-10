@@ -126,8 +126,27 @@
     height: 15%;
 }
 
-#step1-div ,#step2-div ,#step3-div ,#step4-div,#step5-div,#arrow,#arrow-2,#step6-div,#step6-div,#step7-div,#step8-div,
-#step9-div
+#step1-div ,
+#step2-div ,
+#step3-div ,
+#step4-div,
+#step5-div,
+#arrow,
+#arrow-2,
+#step6-div,
+#step6-div,
+#step7-div,
+#step8-div,
+#step9-div,
+#step10-div,
+#step11-div,
+#step12-roll1-div,
+#step12-roll2-div,
+#step12-roll3-div,
+#step12-roll4-div,
+#step12-roll5-div,
+#step12-roll6-div, 
+#step12-roll7-div
 
 { display: none; }
  
@@ -158,4 +177,10 @@
     position: absolute;
     left: 50%;
     top: 71%; 
+}
+
+#step12-roll7-div
+{
+    left: 52%;
+   top: 63%; 
 }
