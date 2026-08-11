@@ -125,3 +125,9 @@
     display: none;
     
 }
+
+#danger
+{
+   position: absolute;
+   top: 0%;
+}

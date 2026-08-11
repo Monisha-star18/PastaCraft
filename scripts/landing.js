@@ -1,4 +1,3 @@
-
 // change the bg of nav on scroll
 
 $(window).on("scroll",function ()
